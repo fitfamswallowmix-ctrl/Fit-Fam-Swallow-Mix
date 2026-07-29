@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fit-Fam Swallow | Affordable Essentials</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2e7d32;
+      --primary-dark: #1b5e20;
+      --accent: #f59e0b;
+      --bg-light: #f9fafb;
+      --text-dark: #1f2937;
+      --text-muted: #4b5563;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-dark); background-color: var(--bg-light); }
+    
+    /* Navigation */
+    nav { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+    .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; padding: 1rem 1.5rem; }
+    .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .nav-links { display: flex; gap: 20px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 600; transition: color 0.3s; }
+    .nav-links a:hover { color: var(--primary); }
+
+    /* Hero Section */
+    .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80') center/cover; color: var(--white); text-align: center; padding: 100px 20px; }
+    .hero h1 { font-size: 2.8rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.25rem; margin-bottom: 25px; opacity: 0.9; }
+    .btn { display: inline-block; background: var(--primary); color: var(--white); padding: 12px 28px; border-radius: 30px; text-decoration: none; font-weight: 700; transition: background 0.3s; }
+    .btn:hover { background: var(--primary-dark); }
+    .btn-accent { background: #25d366; } /* WhatsApp Green */
+    .btn-accent:hover { background: #128c7e; }
+
+    /* Container */
+    .container { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+    .section-title { text-align: center; margin-bottom: 40px; }
+    .section-title h2 { font-size: 2.2rem; color: var(--primary); margin-bottom: 10px; }
+    .section-title p { color: var(--text-muted); }
+
+    /* Grid Layouts */
+    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+    /* Cards */
+    .card { background: var(--white); padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; }
+    .card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 15px; }
+    .card h3 { margin-bottom: 10px; }
+
+    /* Formulation Banner */
+    .formulation-banner { background: #e8f5e9; border-left: 5px solid var(--primary); padding: 20px; border-radius: 8px; margin-top: 30px; }
+
+    /* Contact / Ordering */
+    .contact-box { background: var(--white); padding: 40px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center; }
+    .contact-buttons { display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
+
+    /* Footer */
+    footer { background: var(--text-dark); color: var(--white); text-align: center; padding: 20px; font-size: 0.9rem; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="logo"><i class="fas fa-leaf"></i> Fit-Fam Swallow</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#formulation">Formulation</a></li>
+        <li><a href="#order">Order Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Fit-Fam Swallow</h1>
+    <p>Wholesome. Nutritious. Traditionally Good.</p>
+    <a href="#order" class="btn btn-accent"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+  </section>
+
+  <!-- About & Value Pillars -->
+  <section id="benefits" class="container">
+    <div class="section-title">
+      <h2>Why Choose Fit-Fam Swallow?</h2>
+      <p>A multi-grain swallow mix specially formulated as a healthier alternative to traditional swallows.</p>
+    </div>
+
+    <div class="grid-4">
+      <div class="card">
+        <i class="fas fa-heartbeat"></i>
+        <h3>Rich in Fibre</h3>
+        <p>Promotes optimal digestion, regular bowel movement, and prolonged satiety.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-seedling"></i>
+        <h3>100% Natural</h3>
+        <p>Formulated without artificial preservatives, additives, or synthetic binders.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Healthy Living</h3>
+        <p>Helps manage sugar intake and supports overall cardiovascular & metabolic health.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-users"></i>
+        <h3>For the Family</h3>
+        <p>Versatile flavor profile and smooth texture suitable for all age groups.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Target Audience -->
+  <section id="about" style="background: var(--white);">
+    <div class="container">
+      <div class="section-title">
+        <h2>Tailored for Every Lifestyle</h2>
+      </div>
+      <div class="grid-4">
+        <div class="card">
+          <i class="fas fa-home"></i>
+          <h3>Families</h3>
+          <p>Nutritious household meals for daily living.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-dumbbell"></i>
+          <h3>Fitness Enthusiasts</h3>
+          <p>Nutrient-dense complex carbohydrates for active routines.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-balance-scale"></i>
+          <h3>Weight Management</h3>
+          <p>Low-GI, high-fibre blend for calorie control.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-user-shield"></i>
+          <h3>Adults & Seniors</h3>
+          <p>Easy-to-digest formula supporting balanced wellness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulation Policy Notice -->
+  <section id="formulation" class="container">
+    <div class="section-title">
+      <h2>Our Continuous Commitment to Quality</h2>
+    </div>
+    <div class="formulation-banner">
+      <h3><i class="fas fa-info-circle"></i> Formulation & Ingredient Policy Update</h3>
+      <p style="margin-top: 8px;">
+        While early batches (Batch 001 & Batch 002) contained a small wheat component, <strong>all upcoming production batches (starting from Batch 003 onward) are formulated to be completely wheat-free</strong> to offer a 100% low-GI, gluten-friendly alternative for our health-conscious community.
+      </p>
+    </div>
+  </section>
+
+  <!-- Ordering / Contact -->
+  <section id="order" class="container">
+    <div class="contact-box">
+      <h2>Place Your Order Today</h2>
+      <p style="color: var(--text-muted); margin-top: 5px;">Sealed stand-up pouches available for immediate fulfillment.</p>
+      
+      <div class="contact-buttons">
+        <a href="https://wa.me/2347017323418" class="btn btn-accent" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat on 07017323418
+        </a>
+        <a href="https://wa.me/2348034944354" class="btn btn-accent" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat on 08034944354
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Affordable Essentials — Fit-Fam Swallow. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
